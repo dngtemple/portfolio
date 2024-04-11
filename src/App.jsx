@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Header from './component/Header'
+import Side from './component/Side'
 
 function App() {
   
-
   return (
-    <h3>hi</h3>
+    <div style={{display:"flex",position:"relative",width:"100%",height:"100vh"}}>
+      <Header/>
+
+      <Side/>
+
+    </div>
+    
   )
 }
 
