@@ -1,4 +1,5 @@
 import React from 'react'
+import photo from "../assets/photo.jpg"
 
 export default function Header() {
   return (
@@ -6,16 +7,17 @@ export default function Header() {
 
       <div className='side_header'>
 
-        <img className="header_image" src='https://images.pexels.com/photos/4098288/pexels-photo-4098288.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'/>
+        <img className="header_image" src={photo}/>
         
       </div>
 
       <div className='side_details'>
-        <h3>Clinton Templeton</h3>
+        <h4>Clinton Templeton</h4>
 
-        <p style={{fontSize:"15px",marginTop:"5px"}}>Full Stack Web Developer</p>
+        <p style={{fontSize:"14px",marginTop:"5px",padding:"0px 20px"}}>Full-Stack Web Developer</p>
 
 
+        <span style={{fontSize:"13px",marginTop:"25px"}}>Contact Me</span>
         <div className='side_icons'>
           <a href='https://wa.me/233277169914'>
            <i  style={{color:"green"}} className='fa-brands fa-whatsapp'></i>
@@ -24,7 +26,10 @@ export default function Header() {
           <a href="mailto:donnahaytempleton1230@gmail.com">
            <i style={{color:"red"}} className='fa-solid fa-envelope'></i>
           </a>
-          <i style={{color:"blue"}} className='fa-brands fa-twitter'></i>
+
+          <a href='https://x.com/dngtemple'>
+           <i style={{color:"blue"}} className='fa-brands fa-twitter'></i>
+          </a>
         </div>
 
       </div>
