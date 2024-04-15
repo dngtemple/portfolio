@@ -208,6 +208,7 @@
 
     .side_info{
         width: 100%;
+        padding:5px;
     }
     
     .side_header{
@@ -220,12 +221,12 @@
         row-gap: 5px;
         height: 170vh;
         padding:10px 20px;
-        background-color: none;
 
     }
 
     .work_ex{
         width: 100%;
+        padding:5px;
     }
 
     .skills_section{
@@ -238,6 +239,8 @@
     }
 
     .up_icons{
-        width: 20%;
+        width: 17%;
+        margin-left: 83%;
     }
+
 }

@@ -14,7 +14,7 @@ export default function Header() {
       <div className='side_details'>
         <h4>Clinton Templeton</h4>
 
-        <p style={{fontSize:"14px",marginTop:"5px",padding:"0px 20px"}}>Full-Stack Web Developer</p>
+        <p style={{fontSize:"14px",marginTop:"5px",padding:"0px 20px"}}>Software Developer</p>
 
 
         <span style={{fontSize:"13px",marginTop:"25px"}}>Contact Me</span>
