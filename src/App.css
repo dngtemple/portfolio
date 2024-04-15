@@ -202,6 +202,12 @@
         margin-left: 0%;
         margin-top: 70vh;
         min-height: 350vh;
+        padding:20px 10px;
+
+    }
+
+    .side_info{
+        width: 100%;
     }
     
     .side_header{
@@ -213,12 +219,12 @@
         flex-direction: column;
         row-gap: 5px;
         height: 170vh;
+        padding:10px 20px;
 
     }
 
     .work_ex{
         width: 100%;
-
     }
 
     .skills_section{
@@ -227,7 +233,6 @@
     }
 
     .skills{
-        width: 15%;
         height: 50%;
     }
 
