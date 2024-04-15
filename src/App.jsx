@@ -6,7 +6,7 @@ import Side from './component/Side'
 function App() {
   
   return (
-    <div style={{display:"flex",position:"relative",width:"100%",height:"100vh"}}>
+    <div  className='both_parent' style={{display:"flex",position:"relative",width:"100%",height:"100vh"}}>
       <Header/>
 
       <Side/>

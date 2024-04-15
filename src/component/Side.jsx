@@ -96,7 +96,7 @@ export default function Side() {
 
           <div className='work_exp'>
 
-          <div className='work_ex'>
+           <div className='work_ex'>
               <h4 style={{textAlign:"center"}}>Crivre</h4>
 
               <p  style={{textAlign:"center",fontSize:"15px"}}>Web Application Developer</p>
@@ -159,7 +159,7 @@ export default function Side() {
 
           <h3 style={{textAlign:"center",fontWeight:"100",marginTop:"30px"}}>Project</h3>
 
-          <div className='project_section'>
+          {/* <div className='project_section'>
             <div className='projects'>
 
               <img src={photo}/>
@@ -174,7 +174,7 @@ export default function Side() {
 
             </div>
 
-          </div>
+          </div> */}
 
 
         </div>
