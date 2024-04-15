@@ -61,8 +61,7 @@ export default function Side() {
              functionality and reliability.Thriving within collaborative 
             frameworks, Clinton is a proponent of fostering effective communication
             channels characterized by empathy, active listening, and mutual
-            regard. He demonstrates a remarkable talent for precise and
-            eloquent technical writing, articulating his journey as a web
+            regard. He demonstrates a remarkable talent for articulating his journey as a web
             developer with transparency and levity. His contributions to
             various Medium publications serve not only to inform but also
           o inspire and uplift fellow developers and programmers, 
