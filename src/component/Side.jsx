@@ -61,12 +61,13 @@ export default function Side() {
              functionality and reliability.Thriving within collaborative 
             frameworks, Clinton is a proponent of fostering effective communication
             channels characterized by empathy, active listening, and mutual
-            regard. He demonstrates a remarkable talent for articulating his journey as a web
+            regard. He demonstrates a remarkable talent for articulating his
+             journey as a web
             developer with transparency and levity. His contributions to
             various Medium publications serve not only to inform but also
-          o inspire and uplift fellow developers and programmers, 
+           inspire and uplift fellow developers and programmers, 
           instilling a sense of camaraderie and motivation within the
-            community. Through her insightful narratives and thoughtful reflections,
+            community. Through his insightful narratives and thoughtful reflections,
             Clinton stands as a beacon of encouragement, promoting growth and
             excellence within the field of software development.
           </p>
