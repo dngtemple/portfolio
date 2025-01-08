@@ -63,7 +63,7 @@ const Navbar = () => {
 
         <div className="bg-transparent p-2 sm:p-8">
           <h3 className="text-3xl sm:text-5xl night">Hi! There 👋</h3>
-          <p className="text-sm sm:text-l mt-2 font-light">
+          <p className="text-sm sm:text-l  md:text-xl mt-2 font-light">
             I’m Clinton Templeton, a passionate 21-year-old full-stack web
             developer based in Accra, Ghana. With 2+ years of experience, I
             specialize in crafting dynamic, responsive, and user-friendly web
@@ -86,13 +86,13 @@ const Navbar = () => {
       </div>
 
       {/* Responsive Mountain */}
-      <div
+      {/* <div
         className="relative w-full  h-32 bg-info"
         style={{
           clipPath:
           "polygon(59% 73%, 100% 23%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 91%)",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 };

@@ -13,7 +13,7 @@ import { SiMysql } from "react-icons/si";
 export default function () {
   return (
     <div
-    style={{
+      style={{
         background:
           'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
         backgroundRepeat: "no-repeat",
@@ -25,74 +25,53 @@ export default function () {
         padding: "0px",
       }}
     >
-       <h4 className='text-center text-white text-2xl'>Tech Stack</h4>
+      <h4 className='text-center text-white text-2xl'>Tech Stack</h4>
 
+      <div className='flex flex-wrap gap-2 justify-between mt-[10%] w-[90%] ml-[5%] p-4 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
 
-       <div className='flex flex-wrap gap-2 justify-between mt-[10%]  w-[90%] ml-[5%] p-4 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <FaHtml5 className='text-5xl' />
+          <p>HTML</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <FaCss3 className='text-5xl' />
+          <p>CSS</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <IoLogoJavascript className='text-5xl' />
+          <p>JavaScript</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <FaReact className='text-5xl' />
+          <p>React</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <FaNodeJs className='text-5xl' />
+          <p>Node</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <BiLogoMongodb className='text-5xl' />
+          <p>MongoDB</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <FaFigma className='text-5xl' />
+          <p>Figma</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <SiMysql className='text-5xl' />
+          <p>SQL</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <IoLogoGithub className='text-5xl' />
+          <p>Git</p>
+        </div>
+        <div className='bg-white w-[48%] sm:w-[32%]  md:hidden rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]'>
+          <BiLogoTailwindCss className='text-5xl' />
+          <p>TailwindCss</p>
+        </div>
 
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <FaHtml5 className='text-5xl' />
-            <p>HTML</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <FaCss3 className='text-5xl' />
-            <p>CSS</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <IoLogoJavascript className='text-5xl' />
-            <p>JavaScript</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <FaReact className='text-5xl' />
-            <p>React</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <FaNodeJs className='text-5xl' />
-            <p>Node</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <BiLogoMongodb className='text-5xl' />
-            <p>MongoDB</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <FaFigma className='text-5xl' />
-            <p>Figma</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <SiMysql className='text-5xl' />
-            <p>SQL</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <IoLogoGithub className='text-5xl' />
-            <p>Git</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <BiLogoTailwindCss className='text-5xl' />
-            <p>TailwindCss</p>
-            
-        </div>
-        {/* <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <BiLogoPython className='text-5xl' />
-            <p>Python</p>
-            
-        </div>
-        <div className='bg-white w-[48%] rounded p-4 flex flex-col justify-center items-center' >
-            <SiAdobeillustrator className='text-5xl' />
-            <p>Illustrator</p>
-            
-        </div> */}
+      </div>
 
-       </div>
-        
     </div>
   )
 }
