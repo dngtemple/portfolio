@@ -22,7 +22,7 @@ const Navbar = () => {
         backgroundAttachment: "fixed",
         height: "100vh",
         width: "100%",
-        padding: "5px",
+        padding: "0px",
       }}
     >
       <div className="p-2 flex justify-between h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
@@ -87,7 +87,7 @@ const Navbar = () => {
 
       {/* Responsive Mountain */}
       <div
-        className="relative w-full h-20 bg-info"
+        className="relative w-full  h-32 bg-info"
         style={{
           clipPath:
           "polygon(59% 73%, 100% 23%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 91%)",
