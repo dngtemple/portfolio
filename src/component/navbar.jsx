@@ -90,7 +90,7 @@ const Navbar = () => {
         className="relative w-full h-20 bg-info"
         style={{
           clipPath:
-            "polygon(0% 0%, 100% 100%, 50% 75%, 50% 100%, 25% 75%, 0% 100%)",
+          "polygon(59% 73%, 100% 23%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 91%)",
         }}
       ></div>
     </div>
