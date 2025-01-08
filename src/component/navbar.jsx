@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import {
   MdHome,
   MdPersonRemove,
@@ -55,10 +56,10 @@ const Navbar = () => {
 
       <div className="gap-4 flex flex-col-reverse items-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
         <div className="h-full sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
-          <MdWhatsapp className="text-l text-info" />
-          <MdEmail className="text-l text-info" />
-          <MdFacebook className="text-l text-info" />
-          <MdPallet className="text-l text-info" />
+          <IoLogoGithub className="text-sm text-info" />
+          <MdEmail className="text-sm text-info" />
+          <IoLogoTwitter className="text-sm text-info" />
+          <IoLogoInstagram className="text-sm text-info" />
         </div>
 
         <div className="bg-transparent p-2 sm:p-8">
@@ -85,14 +86,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Responsive Mountain */}
-      {/* <div
-        className="relative w-full  h-32 bg-info"
-        style={{
-          clipPath:
-          "polygon(59% 73%, 100% 23%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 91%)",
-        }}
-      ></div> */}
     </div>
   );
 };
