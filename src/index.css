@@ -199,7 +199,7 @@
   .card .content {
     border-radius: 5px;
     background: #00000088;
-    width: auto;
+    width: 100%;
     padding: 2px;
 
     z-index: 1;
