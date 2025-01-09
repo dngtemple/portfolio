@@ -49,7 +49,7 @@ const TechStack = () => {
         {/* Card 1 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <FaHtml5 className="text-5xl" />
+            <FaHtml5 className="text-5xl text-info" />
             <p className="text-sm sm:text-l">HTML</p>
           </div>
         </div>
@@ -57,7 +57,7 @@ const TechStack = () => {
         {/* Card 2 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <FaCss3 className="text-5xl" />
+            <FaCss3 className="text-5xl text-info" />
             <p className="text-sm sm:text-l">CSS</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const TechStack = () => {
         {/* Card 3 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <IoLogoJavascript className="text-5xl" />
+            <IoLogoJavascript className="text-5xl text-info" />
             <p className="text-sm sm:text-l">JavaScript</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ const TechStack = () => {
         {/* Card 4 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <FaReact className="text-5xl" />
+            <FaReact className="text-5xl text-info" />
             <p className="text-sm sm:text-l">React</p>
           </div>
         </div>
@@ -81,7 +81,7 @@ const TechStack = () => {
         {/* Card 5 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <FaNodeJs className="text-5xl" />
+            <FaNodeJs className="text-5xl text-info" />
             <p className="text-sm sm:text-l">Node</p>
           </div>
         </div>
@@ -89,7 +89,7 @@ const TechStack = () => {
         {/* Card 6 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <BiLogoMongodb className="text-5xl" />
+            <BiLogoMongodb className="text-5xl text-info" />
             <p className="text-sm sm:text-l">MongoDB</p>
           </div>
         </div>
@@ -97,7 +97,7 @@ const TechStack = () => {
         {/* Card 7 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <FaFigma className="text-5xl" />
+            <FaFigma className="text-5xl text-info" />
             <p className="text-sm sm:text-l">Figma</p>
           </div>
         </div>
@@ -105,7 +105,7 @@ const TechStack = () => {
         {/* Card 8 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <SiMysql className="text-5xl" />
+            <SiMysql className="text-5xl text-info" />
             <p className="text-sm sm:text-l">SQL</p>
           </div>
         </div>
@@ -113,7 +113,7 @@ const TechStack = () => {
         {/* Card 9 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <IoLogoGithub className="text-5xl" />
+            <IoLogoGithub className="text-5xl text-info" />
             <p className="text-sm sm:text-l">Git</p>
           </div>
         </div>
@@ -121,7 +121,7 @@ const TechStack = () => {
         {/* Card 10 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">
-            <BiLogoTailwindCss className="text-5xl" />
+            <BiLogoTailwindCss className="text-5xl text-info" />
             <p className="text-sm sm:text-l">TailwindCSS</p>
           </div>
         </div>
