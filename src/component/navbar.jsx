@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="flex gap-10 flex-col"
+      className="flex gap-10 flex-col relative"
       style={{
         background:
           'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
@@ -31,7 +31,16 @@ const Navbar = () => {
         padding: "2px",
       }}
     >
-      <div className="p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-blue-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      
+      <div className=" p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-blue-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div class="loop cubes top-10 z-50">
+    {/* <div class="item cubes"></div> */}
+    {/* <div class="item cubes"></div> */}
+    {/* <div class="item cubes"></div> */}
+    {/* <div class="item cubes"></div> */}
+    {/* <div class="item cubes"></div> */}
+    <div class="item cubes"></div>
+</div>
         
         <div>
           <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
@@ -89,6 +98,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      
     </div>
   );
 };
