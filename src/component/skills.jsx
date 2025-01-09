@@ -12,7 +12,7 @@ import { SiMysql } from "react-icons/si";
 
 export default function () {
   return (
-    <div className='relative'
+    <div className='relative '
       style={{
         background:
           'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
@@ -25,7 +25,7 @@ export default function () {
         padding: "0px",
       }}
     >
-      <h4 className='text-center text-white text-2xl'>Tech Stack</h4>
+      {/* <h4 className='text-center text-white text-2xl'>My Tech Stack</h4> */}
 
       <div className='z-10 absolute flex flex-wrap gap-2 justify-between mt-[10%] w-[90%] ml-[5%] p-4 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
 

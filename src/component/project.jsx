@@ -18,7 +18,7 @@ export default function project() {
    
 
   return (
-    <div className='flex justify-center relative '
+    <div className='flex  relative '
       style={{
         background:
           'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
@@ -31,9 +31,7 @@ export default function project() {
         padding: "0px",
       }}
 
-    >
-      <h4 className='text-center text-white text-2xl'>Projects</h4>
-     
+    >     
 <div class="loop cubes">
     <div class="item cubes"></div>
     <div class="item cubes"></div>
@@ -42,6 +40,13 @@ export default function project() {
     <div class="item cubes"></div>
     <div class="item cubes"></div>
 </div>
+
+   <div className='absolute w-[90%] ml-[5%] mb-10 p-4 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+
+   <h4 className='text-center text-white text-2xl '>Projects</h4>
+
+
+   </div>
       
 
     </div>

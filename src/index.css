@@ -163,7 +163,7 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: #3684a9;
+    background: #0dcaf0;
     transform: translate(-50% , -100%)  scale(0);
     animation: push_401 2s infinite linear;
   }
@@ -182,7 +182,7 @@
     }
   }
 
-.card {
+.card{
     width: 48%;
     /* height: 254px; */
     padding:4px;
@@ -264,6 +264,89 @@
       transform: rotate(360deg);
     }
   }
+
+
+
+
+
+
+  /* From Uiverse.io by gharsh11032000 */ 
+.card1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 24px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 36px;
+    border-radius: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    background: #0dcaf0;
+    color: black;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content1::before {
+    position: absolute;
+    content: "";
+    top: -2%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+  
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+
+  .content1 svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .content1 .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 12px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content1 .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content1 .link:hover {
+    text-decoration: underline;
+  }
+  
+  .card1:hover {
+    transform: translate(0px, -16px);
+  }
+  
+ 
+
+
+
+
   
   
 
