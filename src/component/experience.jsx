@@ -16,7 +16,7 @@ export default function
       }}
     >
 
-        <div className='p-4 ml-[5%] mt-5 w-[90%] bg-gray-50 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+        <div className='p-2 ml-[5%] mb-5 mt-5 w-[90%] bg-gray-50 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
 
             <h4 className='text-center text-white text-xl mt-10 mb-10'>Work Experience</h4>
 
@@ -25,7 +25,13 @@ export default function
                 <h4 class="card3-title">Software Developer Intern</h4>
                 <p class="card3-title">My Apps Lab</p>
                 <p class="card3-body">
-               " Successfully completed a remote Web Developer Internship, where I gained valuable hands-on experience in the MERN stack. As a key member of the team, I was responsible for collaborative full-stack development on various projects, leading team meetings to discuss project progress and goals. I also honed my problem-solving skills by troubleshooting and resolving technical issues. This remote internship provided me with invaluable experience in web development, teamwork, and communication, ultimately preparing me for a successful career in the tech industry."
+               " 
+               Successfully completed a remote Web Developer Internship,
+                gaining hands-on experience in the MERN stack. Contributed
+                 to full-stack development projects, led team meetings, and
+                  resolved technical issues, enhancing problem-solving, teamwork,
+                   and communication skills. This experience prepared me
+                    for a successful career in tech.."
                 </p>
                 <p class="footer"> <span class="by-name">July 2024 - Now </span> </p>
                 </div>
@@ -34,8 +40,11 @@ export default function
                 <h4 class="card3-title">Frontend Developer Intern</h4>
                 <p class="card3-title">IT Consortium</p>
                 <p class="card3-body">
-                "I held the position of Frontend Developer Intern at IT Consortium, where I expanded my skill set and gained valuable experience. During my tenure, I acquired proficiency in Figma, enhancing my UI/UX design capabilities. Additionally, I learned Python programming fundamentals, broadening my technical expertise.
-                One of my notable accomplishments was the successful development of a Timebox project, which showcased my ability to apply theoretical knowledge to practical applications."
+                Served as a Frontend Developer Intern at IT Consortium,
+                 gaining proficiency in Figma for UI/UX design and learning
+                  Python programming fundamentals. Successfully developed a Timebox project,
+                 demonstrating the ability to apply theoretical knowledge to
+                  practical applications and expand technical expertise.
                 </p>
                 <p class="footer"> <span class="by-name">August 2024 - September 2024 </span> </p>
                 </div>

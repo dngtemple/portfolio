@@ -17,7 +17,7 @@ const Testimonials = () => {
                 }}
             >
 
-                <div className=' w-[90%] ml-[5%] mt-5 p-1 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+                <div className=' w-[90%] ml-[5%]  mt-5 p-1 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
 
                     <h4 className='text-center text-white text-xl mt-10 mb-10'>What People Are Saying About Me</h4>
 
