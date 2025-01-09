@@ -35,6 +35,18 @@ const Testimonials = () => {
                             </div>
                             </div>
 
+                            <div class="card1 sm:w-[49%] ">
+                            <div class="content1 bg-info">
+                               
+                                <p class="para">
+                                " He was a key player in our development team,
+                                 contributing not only with his coding skills but also
+                                  with great ideas and collaborative energy. Our web app
+                                   would not be what it is without his input."
+                                </p>
+                            </div>
+                            </div>
+                            
                            <div class="card1 sm:w-[49%]">
                             <div class="content1">
                                 
@@ -45,6 +57,7 @@ const Testimonials = () => {
                                 </p>
                             </div>
                             </div>
+
 
                            <div class="card1 sm:w-[49%]">
                             <div class="content1">
@@ -57,15 +70,7 @@ const Testimonials = () => {
                             </div>
                             </div>
 
-                           <div class="card1 sm:w-[49%] ">
-                            <div class="content1 bg-info">
-                               
-                                <p class="para">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam
-                                at voluptas minus culpa deserunt delectus sapiente inventore pariatur
-                                </p>
-                            </div>
-                            </div>
+                           
 
 
                     </div>

@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import {
   MdHome,
-  MdPersonRemove,
   MdContactPage,
   MdPallet,
   MdWhatsapp,
   MdEmail,
-  MdFacebook,
 } from "react-icons/md";
 
 const Navbar = () => {
+  const [animateIntro, setAnimateIntro] = useState(false);
+
+  useEffect(() => {
+    // Start the animation when the component mounts
+    setAnimateIntro(true);
+  }, []);
+
   return (
     <div
       className="flex gap-10 flex-col"
@@ -26,13 +31,12 @@ const Navbar = () => {
         padding: "2px",
       }}
     >
-      <div className="p-2  flex justify-between h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="p-2 flex justify-between h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
         <img
           src="/facebook_cover_photo_1.png"
           className="w-8 h-full"
           alt="Logo"
         />
-
         <div>
           <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
             <li>
@@ -62,10 +66,13 @@ const Navbar = () => {
           <IoLogoInstagram className="text-sm text-info" />
         </div>
 
-        <div className="bg-transparent p-2 sm:p-8">
-
+        <div
+          className={`bg-transparent p-2 sm:p-8 transition-all duration-1000 ${
+            animateIntro ? "animate-intro" : "opacity-0"
+          }`}
+        >
           <h3 className="text-3xl sm:text-5xl night">Hi! There 👋</h3>
-          <p className="text-sm sm:text-l   md:text-xl mt-2 font-light">
+          <p className="text-sm sm:text-l md:text-xl mt-2 font-light">
             I’m Clinton Templeton, a passionate 21-year-old full-stack web
             developer based in Accra, Ghana. With 2+ years of experience, I
             specialize in crafting dynamic, responsive, and user-friendly web
@@ -85,12 +92,7 @@ const Navbar = () => {
             Get In Touch <MdWhatsapp className="text-sm text-black" />
           </button>
         </div>
-
-          <span class="loader"></span>
       </div>
-
-
-
     </div>
   );
 };
