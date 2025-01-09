@@ -33,7 +33,7 @@ export default function
                    and communication skills. This experience prepared me
                     for a successful career in tech.."
                 </p>
-                <p class="footer"> <span class="by-name">July 2024 - Now </span> </p>
+                <p class="footer"> <span class="by-name">July 2024 - December 2024 </span> </p>
                 </div>
             
                 <div class="card3 text-sm md:w-[48%]">
