@@ -360,21 +360,17 @@
 
 
 
-/* From Uiverse.io by Centered101 */
 .card2 {
     width: 100%;
-    height: 280px;
+    min-height: 35vh;
     background: #60A5FA;
     border-radius: 32px;
-    padding: 3px;
+    padding: 1px;
     position: relative;
     box-shadow: #604b4a30 0px 70px 30px -50px;
     transition: all 0.5s ease-in-out;
   }
   
-
-
-
   
   .card2 .profile-pic {
     position: absolute;
@@ -520,7 +516,7 @@
 
 
 
-  /* From Uiverse.io by Sashank02 */ 
+
 .card3 {
     padding: 5px;
     width: 100%;
@@ -548,7 +544,6 @@
   
   .card3-body {
     margin: 13px 0 0 10px;
-    /* color: rgb(184, 184, 184); */
     font-size: 12px;
     color: black;
   }

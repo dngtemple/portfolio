@@ -10,17 +10,17 @@ export default function
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: "100vh",
+        minHeight: "100vh",
         width: "100%",
         padding: "2px",
       }}
     >
 
-        <div className='p-2 ml-[5%] mb-5 mt-5 w-[90%] bg-gray-50 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+        <div className='p-2 ml-[5%] min-h-full  w-[90%] bg-gray-50 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
 
             <h4 className='text-center text-white text-xl mt-10 mb-10'>Work Experience</h4>
 
-            <div className='p-2 flex flex-wrap gap-2 mt-10'>
+            <div className='p-2 flex min-h-full flex-wrap gap-2 mt-10'>
                 <div class="card3 text-sm md:w-[48%] backdrop-blur-sm bg-opacity-20">
                 <h4 class="card3-title">Software Developer Intern</h4>
                 <p class="card3-title">My Apps Lab</p>

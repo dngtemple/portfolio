@@ -11,7 +11,7 @@ const Testimonials = () => {
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
-                    // height: "100vh",
+                    minHeight: "100vh",
                     width: "100%",
                     padding: "2px",
                 }}
@@ -22,7 +22,7 @@ const Testimonials = () => {
                     <h4 className='text-center text-white text-xl mt-10 mb-10'>What People Are Saying About Me</h4>
 
 
-                    <div className='p-4 bg-transparent flex-wrap flex gap-1'>
+                    <div className='p-4  flex-wrap flex gap-1'>
                            <div class="card1 sm:w-[49%]">
                             <div class="content1 bg-info">
                                 

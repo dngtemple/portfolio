@@ -40,12 +40,12 @@ const TechStack = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: "100vh",
+        minHeight: "100vh",
         width: "100%",
-        padding: "0px",
+        padding: "2px",
       }}
     >
-      <div className="z-10 absolute flex flex-wrap gap-2 justify-between mt-[10%] w-[90%] ml-[5%] p-4 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="z-10 absolute flex flex-wrap gap-2 justify-between mt-10 w-[90%] ml-[5%] p-8 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
         {/* Card 1 */}
         <div className="card bg-white w-[48%] sm:w-[32%] rounded p-4 flex flex-col justify-center items-center transition-all ease-in-out hover:bg-info hover:translate-y-[-5px]">
           <div className="content flex flex-col justify-center items-center">

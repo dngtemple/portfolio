@@ -24,7 +24,7 @@ export default function footer() {
                   href=""
                   className="logo text-white flex items-center gap-2 font-ClashDisplayMed capitalize text-xl"
                 >
-                  <img src="image.png" alt="" className="w-[2rem] sm:w-[2rem]" />
+                  {/* <img src="image.png" alt="" className="w-[2rem] sm:w-[2rem]" /> */}
                 </a>
                 <p className="text-white text-sm font-normal font-['Clash Display'] leading-relaxed">
                   Copyright © {new Date().getFullYear()} All Rights Reserved.

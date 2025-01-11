@@ -26,7 +26,7 @@ const Navbar = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        height: "100vh",
+        minHeight: "100vh",
         width: "100%",
         padding: "2px",
       }}
