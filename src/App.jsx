@@ -1,21 +1,28 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './component/navbar'
-import Skills from './component/skills'
 import Project from './component/project'
-import Testimonials from './component/testimonials'
-import Experience from './component/experience'
-import Footer from './component/footer'
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+import { useEffect
+ } from 'react';
 
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  },[])
+  
   
   return (
 
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
-         <Route path="/" element={ <> <Navbar/>  <Skills/> <Experience/>   <Project/>    <Testimonials/> <Footer/> </>
-        }/>
+         <Route path="/" element={ <Navbar/>}/>
+         <Route path="/projects" element={ <Project/>}/>
       </Routes>    
     </BrowserRouter>
     

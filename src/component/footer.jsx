@@ -6,15 +6,15 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 export default function footer() {
   return (
    <div  style={{
-    background:
-      'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
+    backgroundColor:"black",
+    //   'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover",
+    // backgroundPosition: "center",
+    // backgroundAttachment: "fixed",
     // height: "100vh",
     width: "100%",
-    padding: "4px",
+    padding: "1px",
   }}>
 
 <div className="container flex flex-col justify-center items-center">

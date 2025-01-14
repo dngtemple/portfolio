@@ -7,21 +7,24 @@ import {
   MdWhatsapp,
   MdEmail,
 } from "react-icons/md";
+import "aos/dist/aos.css";
+
+
+
 
 const Navbar = () => {
   const [animateIntro, setAnimateIntro] = useState(false);
 
   useEffect(() => {
-    // Start the animation when the component mounts
     setAnimateIntro(true);
   }, []);
 
   return (
-    <div
+    <div data-aos="fade-up-right" data-aos-duration="2000" 
       className="flex gap-10 flex-col relative"
       style={{
         background:
-          'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
+          'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/back.jpeg")',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -32,30 +35,25 @@ const Navbar = () => {
       }}
     >
       
-      <div className=" p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-blue-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className=" p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-blue-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
       <div class="loop cubes top-10 z-50">
-    {/* <div class="item cubes"></div> */}
-    {/* <div class="item cubes"></div> */}
-    {/* <div class="item cubes"></div> */}
-    {/* <div class="item cubes"></div> */}
-    {/* <div class="item cubes"></div> */}
-    <div class="item cubes"></div>
+    {/* <div class="item cubes bg-info"></div> */}
 </div>
         
         <div>
           <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
             <li>
-              <a className="tooltip" data-tip="Home">
+              <a className="tooltip tooltip-bottom" data-tip="Home">
                 <MdHome className="text-xl" />
               </a>
             </li>
             <li>
-              <a className="tooltip" data-tip="Projects">
+              <a className="tooltip tooltip-bottom" data-tip="Projects">
                 <MdPallet className="text-xl" />
               </a>
             </li>
             <li>
-              <a className="tooltip" data-tip="Contact">
+              <a className="tooltip tooltip-bottom" data-tip="Contact">
                 <MdContactPage className="text-xl" />
               </a>
             </li>
@@ -63,12 +61,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-blue-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-blue-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
         <div className="h-full sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
-          <IoLogoGithub className="text-sm text-info" />
-          <MdEmail className="text-sm text-info" />
-          <IoLogoTwitter className="text-sm text-info" />
-          <IoLogoInstagram className="text-sm text-info" />
+          <IoLogoGithub className="text-sm text-info hover:text-white" />
+          <MdEmail className="text-sm text-info hover:text-red-400" />
+          <IoLogoTwitter className="text-sm text-info hover:text-blue-900" />
+          <IoLogoInstagram className="text-sm text-info hover:text-red-400" />
         </div>
 
         <div
@@ -76,8 +74,8 @@ const Navbar = () => {
             animateIntro ? "animate-intro" : "opacity-0"
           }`}
         >
-          <h3 className="text-3xl sm:text-5xl night">Hi! There 👋</h3>
-          <p className="text-sm sm:text-l md:text-xl mt-2 font-light">
+          <h3 className="text-3xl sm:text-4xl night headline">Hi! There 👋</h3>
+          <p className="text-xm sm:text-sm md:text-xl mt-2 font-light">
             I’m Clinton Templeton, a passionate 21-year-old full-stack web
             developer based in Accra, Ghana. With 2+ years of experience, I
             specialize in crafting dynamic, responsive, and user-friendly web
