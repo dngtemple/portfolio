@@ -1,74 +1,67 @@
 import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 import Footer from './footer';
-
 const projects = [
   {
     id: 1,
-    image: "/back.jpeg",
-    url: "https://example.com/project1",
-    github: "https://github.com/user/project1",
-    description: "Chat application using React and Node.js.",
+    image: "/1.png",
+    url: "https://chat-app-cfsj.onrender.com",
+    github: "https://github.com/dngtemple/chat-app",
+    description: "Chat application ",
     skill:[
-      "html",
-      "css",
       "react",
       "node",
+      "socket-io",
+      "tailwind"
     ]
   },
   {
     id: 2,
-    image: "/pp.jpg",
+    image: "/3.png",
     url: "https://example.com/project2",
-    github: "https://github.com/user/project2",
-    description: "This is a short description of project 2."
+    github: "https://github.com/dngtemple/weather-app",
+    description: "Location weather app ",
+    skill:[
+      "react",
+      "rest-api",
+      "express",
+      "html"
+    ]
   },
   {
     id: 3,
-    image: "/path/to/image3.jpg",
-    url: "https://example.com/project3",
-    github: "https://github.com/user/project3",
-    description: "This is a short description of project 3."
-  },
-  {
-    id: 4,
-    image: "/path/to/image4.jpg",
-    url: "https://example.com/project4",
-    github: "https://github.com/user/project4",
-    description: "This is a short description of project 4."
-  },
-  {
-    id: 5,
-    image: "/back.jpeg",
-    url: "https://example.com/project5",
-    github: "https://github.com/user/project5",
-    description: "This is a short description of project 5."
-  },
-  {
-    id: 6,
-    image: "/back.png",
-    url: "https://example.com/project6",
-    github: "https://github.com/user/project6",
-    description: "This is a short description of project 6. This is a short description of project 6."
+    image: "/2.png",
+    url: "https://kojokwarteng.vercel.app",
+    github: "https://github.com/dngtemple/kwart-web",
+    description: "Photography website",
+    skill:[
+      "react",
+      "framer-motion",
+      "figama",
+      "tailwind"
+    ]
   }
 ];
 
 export default function Project() {
+  const navigate = useNavigate();
+
   return (
     <>
     <div style={{
-        background:
-          'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/back.png")',
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        minHeight: "100vh",
-        width: "100%",
+        // background:
+        //   'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/back.png")',
+        // backgroundRepeat: "no-repeat",
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
+        // backgroundAttachment: "fixed",
+        // minHeight: "100vh",
+        // width: "100%",
         padding: "2px",
       }} >
     <div data-aos="zoom-out-up" className="container mx-auto my-5 px-4">
-      <h2 className="text-center text-white text-xl font-bold mb-4">Projects</h2>
+      <h2 className="text-center text-info text-xl font-bold mb-4">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(project => (
           <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -86,7 +79,6 @@ export default function Project() {
                 {
                   project?.skill?.map((skill,ind) => (
                     <button key={ind} className='btn btn-xs'>{skill}</button>
-                  
                   ))}
 
               </div>

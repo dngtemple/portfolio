@@ -1,13 +1,11 @@
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter,Routes,Route, useNavigate } from 'react-router-dom'
 import './App.css'
 import Navbar from './component/navbar'
-import Project from './component/project'
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import WorkExperience from './component/experience'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
-import { useEffect
- } from 'react';
+import { useEffect} from 'react';
+
 
 
 function App() {
@@ -21,8 +19,8 @@ function App() {
 
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
-         <Route path="/" element={ <Navbar/>}/>
-         <Route path="/projects" element={ <Project/>}/>
+         <Route path="/" element={<> <Navbar/> <WorkExperience/> </>}/>
+
       </Routes>    
     </BrowserRouter>
     
