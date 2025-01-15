@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter,IoLogoLinkedin } from "react-icons/io5";
 import {
   MdHome,
   MdContactPage,
@@ -65,8 +65,7 @@ const Navbar = () => {
         <div className="h-full sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
           <IoLogoGithub className="text-sm text-info hover:text-white" />
           <MdEmail className="text-sm text-info hover:text-red-400" />
-          <IoLogoTwitter className="text-sm text-info hover:text-blue-900" />
-          <IoLogoInstagram className="text-sm text-info hover:text-red-400" />
+          <IoLogoLinkedin className="text-sm text-info hover:text-blue-900" />
         </div>
 
         <div

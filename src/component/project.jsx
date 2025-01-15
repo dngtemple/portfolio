@@ -58,7 +58,7 @@ export default function Project() {
     <>
     <div style={{
         background:
-          'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/back.png")',
+          'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/back.png")',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -68,7 +68,7 @@ export default function Project() {
         padding: "2px",
       }} >
     <div data-aos="zoom-out-up" className="container mx-auto my-5 px-4">
-      <h2 className="text-center text-2xl font-bold mb-4">Projects</h2>
+      <h2 className="text-center text-white text-xl font-bold mb-4">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(project => (
           <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
