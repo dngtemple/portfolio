@@ -7,14 +7,13 @@ import {
   MdWhatsapp,
   MdEmail,
 } from "react-icons/md";
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 
 const Navbar = () => {
   const [animateIntro, setAnimateIntro] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 2000 });
     setAnimateIntro(true);
   }, []);
 
@@ -23,7 +22,7 @@ const Navbar = () => {
       className="flex gap-10 flex-col relative text-black"
       style={{
         background:
-          'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/back.jpeg")',
+          'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/back.jpeg")',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -31,6 +30,7 @@ const Navbar = () => {
         minHeight: "100vh",
         width: "100%",
         padding: "2px",
+
       }}
     >
       <div className="p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+      <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center justify-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
         <div className="h-full sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
           <IoLogoGithub className="text-sm text-info hover:text-white" />
           <MdEmail className="text-sm text-info hover:text-red-400" />
@@ -70,25 +70,20 @@ const Navbar = () => {
             animateIntro ? "animate-intro" : "opacity-0"
           }`}
         >
-          <h3 className="text-2xl sm:text-4xl night headline text-black">Hi! There 👋</h3>
-          <p className="text-xm sm:text-sm md:text-xl mt-2 font-light text-black">
-            I’m Clinton Templeton, a passionate 21-year-old full-stack web
-            developer based in Accra, Ghana. With 2+ years of experience, I
-            specialize in crafting dynamic, responsive, and user-friendly web
-            applications. My expertise spans the entire development stack, from
-            designing captivating user interfaces to building robust backend
-            systems.
-            <br />
-            <br />
-            I thrive on transforming ideas into functional, visually appealing
-            digital solutions. Whether it’s collaborating with teams to bring
-            projects to life or working independently on innovative web
-            applications, I approach every challenge with enthusiasm and
-            dedication.
+          <h3 className="text-2xl sm:text-4xl night headline text-black" data-aos="fade-up">Hi! There 👋</h3>
+          <p className="text-l sm:text-sm md:text-xl mt-2 font-light text-black">
+            I’m <span data-aos="fade-down" className="text-lg font-bold text-info">Clinton Templeton </span>, 
+              a fullstack software developer and coding tutor. I develop industry
+             standard products that solve everyday problems,
+              with an emphasis on user experience, accessibility and performance
           </p>
 
           <button className="btn-sm mt-6 btn btn-info">
-            Get In Touch <MdWhatsapp className="text-sm text-black" />
+            Hire Me <MdWhatsapp className="text-sm text-black" />
+          </button>
+
+          <button className="btn-sm mt-6 ml-1 btn btn-info">
+            Download CV 
           </button>
         </div>
       </div>

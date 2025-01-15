@@ -1,86 +1,70 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
-const Testimonials = () => {
-    return (
-       
-            <div className='relative flex'
-                style={{
-                    background:
-                        'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/back.jpeg")',
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundAttachment: "fixed",
-                    minHeight: "100vh",
-                    width: "100%",
-                    padding: "2px",
-                }}
-            >
+const testimonials = [
+  {
+    id: 1,
+    name: "John Doe",
+    role: "CEO, Tech Solutions Inc.",
+    rating: 5,
+    feedback: "Clinton is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills are top-notch."
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    role: "Project Manager, Web Innovators",
+    rating: 4.5,
+    feedback: "Working with Clinton has been a pleasure. He is a team player and always goes the extra mile to ensure project success."
+  },
+  {
+    id: 3,
+    name: "Michael Johnson",
+    role: "Lead Designer, Creative Minds",
+    rating: 4,
+    feedback: "Clinton's design skills are impressive. He has a keen eye for detail and always creates visually appealing and user-friendly interfaces."
+  }
+];
 
-                <div className=' w-[90%] ml-[5%]  mt-5 p-1 bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100'>
+const renderStars = (rating) => {
+  const fullStars = Math.floor(rating);
+  const halfStar = rating % 1 !== 0;
+  const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
 
-                    <h4 className='text-center text-white text-xl mt-10 mb-10'>What People Are Saying About Me</h4>
+  return (
+    <>
+      {[...Array(fullStars)].map((_, index) => (
+        <FaStar key={index} className="text-yellow-500" />
+      ))}
+      {halfStar && <FaStarHalfAlt className="text-yellow-500" />}
+      {[...Array(emptyStars)].map((_, index) => (
+        <FaRegStar key={index} className="text-yellow-500" />
+      ))}
+    </>
+  );
+};
 
+export default function Testimonials() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
-                    <div className='p-4  flex-wrap flex gap-1'>
-                           <div class="card1 sm:w-[49%]">
-                            <div class="content1 bg-info">
-                                
-                                <p class="para">
-                                "Working with Clinton was a game-changer for our project.
-                                 He ensured our website looked stunning and worked flawlessly
-                                  across all devices. His frontend expertise is second to none." - 
-                                  <span className='font-light from-neutral-400 text-gray-600'> Andikan,Marketing Lead at Crivre</span>
-                                </p>
-                            </div>
-                            </div>
-
-                            <div class="card1 sm:w-[49%] ">
-                            <div class="content1 bg-info">
-                               
-                                <p class="para">
-                                " He was a key player in our development team,
-                                 contributing not only with his coding skills but also
-                                  with great ideas and collaborative energy. Our web app
-                                   would not be what it is without his input."
-                                </p>
-                            </div>
-                            </div>
-
-                           <div class="card1 sm:w-[49%]">
-                            <div class="content1">
-                                
-                                <p class="para">
-                                "He developed a custom landing page for our startup,
-                                 and the results were outstanding. The performance and
-                                  design optimized conversions and left a lasting impression on our clients."
-                                </p>
-                            </div>
-                            </div>
-
-
-                           <div class="card1 sm:w-[49%]">
-                            <div class="content1">
-                               
-                                <p class="para">
-                                "The flow of the website is intuitive, and our users have
-                                 given great feedback about the experience." - 
-                                 <span className='font-light from-neutral-400 text-gray-600'>Micheal Affum</span>
-                                </p>
-                            </div>
-                            </div>
-
-                           
-
-
-                    </div>
-
-                    
-
-                </div>
-               
-           </div>
-    );
+  return (
+    <div className="container mx-auto my-10 px-4">
+      <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Testimonials</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+            <p className="text-gray-700 mb-4">"{testimonial.feedback}"</p>
+            <div className="flex items-center mb-2">
+              {renderStars(testimonial.rating)}
+            </div>
+            <h3 className="text-xl font-semibold text-info">{testimonial.name}</h3>
+            <p className="text-gray-600 text-sm">{testimonial.role}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
-
-export default Testimonials;
