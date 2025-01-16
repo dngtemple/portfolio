@@ -9,7 +9,7 @@ export default function Education() {
 
   return (
     <div className="container mx-auto my-10 px-4">
-      <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Education</h2>
+      <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Educational Background</h2>
       <div className="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
         <h3 className="text-xl font-semibold text-info">University of Professional Studies, Accra (UPSA)</h3>
         <p className="text-gray-600 text-sm mb-2">Bachelor of Science in Information Technology Management</p>

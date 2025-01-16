@@ -7,47 +7,50 @@ import Skills from './skills';
 import Project from './project';
 import Testimonials from './testimonials';
 import Education from './education';
+import { Element } from 'react-scroll';
+
 
 import Footer from './footer';
+import Contact from './contact';
 const experiences = [
   {
     id: 1,
-    company: "Tech Solutions Inc.",
-    jobTitle: "Full-Stack Developer",
-    startDate: "January 2020",
+    company: "My Apps Lab",
+    jobTitle: "Web Developer Intern",
+    startDate: "July 2024",
     endDate: "Present",
     responsibilities: [
       "Developed and maintained web applications using React and Node.js.",
       "Collaborated with cross-functional teams to define, design, and ship new features.",
       "Improved application performance and scalability."
     ],
-    description: "At Tech Solutions Inc., I have honed my skills in full-stack development, working on various projects that involve both frontend and backend technologies. This role has significantly improved my problem-solving abilities and my understanding of scalable web applications."
+    description: "I have honed my skills in full-stack development, working on various projects that involve both frontend and backend technologies. This role has significantly improved my problem-solving abilities and my understanding of scalable web applications."
   },
   {
     id: 2,
-    company: "Web Innovators",
-    jobTitle: "Frontend Developer",
-    startDate: "June 2018",
-    endDate: "December 2019",
+    company: "IT Consortium",
+    jobTitle: "Software Developer Intern",
+    startDate: "August 2024",
+    endDate: "September 2024",
     responsibilities: [
       "Designed and implemented user-friendly interfaces using HTML, CSS, and JavaScript.",
       "Worked closely with backend developers to integrate APIs.",
       "Ensured cross-browser compatibility and responsiveness."
     ],
-    description: "During my time at Web Innovators, I worked closely with a team of developers to create innovative web solutions. This experience has enhanced my teamwork skills and my ability to deliver high-quality code under tight deadlines."
+    description: "At ITC, I worked closely with a team of developers to create innovative web solutions. This experience has enhanced my teamwork skills and my ability to deliver high-quality code under tight deadlines."
   },
   {
     id: 3,
-    company: "Creative Minds",
-    jobTitle: "UI/UX Designer",
-    startDate: "March 2016",
-    endDate: "May 2018",
+    company: "Crivre Inc",
+    jobTitle: "Frontend Engineer",
+    startDate: "March 2024",
+    endDate: "July 2024",
     responsibilities: [
       "Designed user interfaces and user experiences for web applications.",
       "Conducted user research and usability testing.",
       "Collaborated with developers to ensure design feasibility."
     ],
-    description: "At Creative Minds, I was responsible for designing and implementing user-friendly interfaces. This role has greatly improved my design skills and my ability to create visually appealing and functional web applications."
+    description: " I was responsible for designing and implementing user-friendly interfaces. This role has greatly improved my design skills and my ability to create visually appealing and functional web applications."
   }
 ];
 
@@ -57,8 +60,8 @@ export default function WorkExperience() {
   return (
 
     <>
-    <Skills/>
     <Education/>
+    <Skills/>
     <div className="container mx-auto my-10 px-4 flex flex-col md:flex-row">
       <div className="w-full md:w-1/4 sticky top-0 mb-8 md:mb-0">
         <h2 className="text-2xl font-bold mb-4 text-info" data-aos="fade-right">Work Experience</h2>
@@ -89,8 +92,14 @@ export default function WorkExperience() {
         ))}
       </div>
     </div>
-    <Project/>
+    <Element name="projects">
+        <Project />
+      </Element>
     <Testimonials/>
+
+    <Element name="contact">
+        <Contact />
+      </Element>
     <Footer/>
     </>
   );

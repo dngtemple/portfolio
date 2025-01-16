@@ -61,7 +61,9 @@ export default function Project() {
         padding: "2px",
       }} >
     <div data-aos="zoom-out-up" className="container mx-auto my-5 px-4">
-      <h2 className="text-center text-info text-xl font-bold mb-4">Projects</h2>
+    <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Projects</h2>
+    
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(project => (
           <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
