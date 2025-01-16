@@ -6,24 +6,26 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    role: "CEO, Tech Solutions Inc.",
+    name: "",
+    role: "Kwarteng",
     rating: 5,
-    feedback: "Clinton is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills are top-notch."
+    feedback: "Yes , he communicates well, delivers on time. And he is easy to work with."
   },
   {
     id: 2,
-    name: "Jane Smith",
-    role: "Project Manager, Web Innovators",
+    name: "",
+    role: "Project Manager, Crivre Inc",
     rating: 4.5,
-    feedback: "Working with Clinton has been a pleasure. He is a team player and always goes the extra mile to ensure project success."
+    feedback: `The front page looks great!!
+         Thanks for the changes I really love it` 
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    role: "Lead Designer, Creative Minds",
+    name: "",
+    role: "",
     rating: 4,
-    feedback: "Clinton's design skills are impressive. He has a keen eye for detail and always creates visually appealing and user-friendly interfaces."
+    feedback: `And I really really appreciate the speed and efforts we've put in so far..
+Honestly.`
   }
 ];
 
