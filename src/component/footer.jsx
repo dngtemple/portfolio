@@ -25,7 +25,7 @@ export default function footer() {
                   <a href="https://wa.me/233277169914">
                     <FaWhatsappSquare className='text-info text-xl'/>
                   </a>
-                  <a href="">
+                  <a href="https://www.instagram.com/dngtemple">
                     <FaInstagramSquare className='text-info text-xl'/>
                   </a>
 

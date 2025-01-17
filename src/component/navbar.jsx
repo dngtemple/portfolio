@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import {
-  MdWhatsapp,
-  MdEmail,
-  MdAddHomeWork,
-  MdBarChart,
-} from "react-icons/md";
-
-import 'aos/dist/aos.css';
+import { MdWhatsapp, MdEmail, MdBarChart, MdArchitecture, MdAddModerator, MdApartment } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Tooltip } from 'react-tooltip';
+import 'aos/dist/aos.css';
+import WorkExperience from './experience';
+import { IoIosCall, IoIosPrint } from "react-icons/io";
 
-
-import WorkExperience from './experience'
-import { IoIosCall, IoIosCode, IoIosPrint } from "react-icons/io";
 const Navbar = () => {
   const [animateIntro, setAnimateIntro] = useState(false);
 
@@ -23,55 +16,52 @@ const Navbar = () => {
 
   return (
     <>
-    
-    <div data-aos="fade-up" data-aos-duration="2000" 
-      className="flex gap-10 flex-col relative text-black"
-      style={{
-        background:
-          'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/back.jpeg")',
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        minHeight: "100vh",
-        width: "100%",
-        padding: "2px",
-
-      }}
-    >
-      <div className="p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-        <div className="loop cubes top-10 z-50">
-        </div>
-        <div>
-          <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
-            <li>
-            <Link to="projects" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Projects">
-                <MdBarChart className="text-xl" />
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Contact">
-                <IoIosCall className="text-xl" />
-              </Link>
-            </li>
-            <li>
-              <a href="/cv.pdf" download className="tooltip tooltip-bottom" data-tip="Download CV">
-                <IoIosPrint className="text-xl" />
-              </a>
-              <Tooltip place="bottom" type="dark" effect="solid" />
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center justify-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-        <div className="h-full sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
-          <IoLogoGithub className="text-l text-info " />
-          <MdEmail className="text-l text-info " />
-          <IoLogoLinkedin className="text- text-info" />
+      <div data-aos="fade-up" data-aos-duration="2000" 
+        className="flex gap-10 flex-col relative text-black"
+        style={{
+          background:
+            'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/back.jpeg")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          minHeight: "100vh",
+          width: "100%",
+          padding: "2px",
+        }}
+      >
+        <div className="p-2 flex justify-center h-8 items-center ml-[5%] mt-5 w-[90%] bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+          
+          <div>
+            <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
+              <li>
+                <Link to="projects" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Projects">
+                  <MdApartment className="text-xl" />
+                </Link>
+              </li>
+              <li>
+                <Link to="contact" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Contact">
+                  <IoIosCall className="text-xl" />
+                </Link>
+              </li>
+              <li>
+                <a href="/cv.pdf" download className="tooltip tooltip-bottom" data-tip="Download CV">
+                  <IoIosPrint className="text-xl" />
+                </a>
+                <Tooltip place="bottom" type="dark" effect="solid" />
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div
+        <div className="relative h-[70vh] gap-4 flex flex-col items-center justify-center text-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+          <div className="h-full sm:w-10 w-full flex flex-row sm:flex-reversepp- gap-1.5 text-2xl items-center justify-center">
+            <IoLogoGithub className="text-l text-info " />
+            <MdEmail className="text-l text-info " />
+            <IoLogoLinkedin className="text- text-info" />
+          </div>
+
+          <div
             className={`bg-transparent p-2 sm:p-8 transition-all duration-1000 ${
               animateIntro ? "animate-intro" : "opacity-0"
             }`}
@@ -89,10 +79,10 @@ const Navbar = () => {
               </button>
             </a>
           </div>
+        </div>
       </div>
-    </div>
-    <WorkExperience/>
-          </>
+      <WorkExperience/>
+    </>
   );
 };
 
