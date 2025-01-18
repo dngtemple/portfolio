@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="relative h-[70vh] gap-4 flex flex-col items-center justify-center text-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
+        <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center justify-center text-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
           <div className="h-full sm:w-10 w-full flex flex-row sm:flex-reversepp- gap-1.5 text-2xl items-center justify-center">
             <IoLogoGithub className="text-l text-info " />
             <MdEmail className="text-l text-info " />
