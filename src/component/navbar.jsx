@@ -55,19 +55,19 @@ const Navbar = () => {
         </div>
 
         <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center justify-center text-center text-sm p-4 text-white sm:flex-row sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
-          <div className="h-full sm:w-10 w-full flex flex-row sm:flex-reversepp- gap-1.5 text-2xl items-center justify-center">
+          <div className="h-full  sm:w-10 w-full flex flex-row sm:flex-col gap-1.5 text-2xl items-center justify-center">
             <IoLogoGithub className="text-l text-info " />
             <MdEmail className="text-l text-info " />
             <IoLogoLinkedin className="text- text-info" />
           </div>
 
           <div
-            className={`bg-transparent p-2 sm:p-8 transition-all duration-1000 ${
+            className={` p-2 sm:p-8 transition-all duration-1000 ${
               animateIntro ? "animate-intro" : "opacity-0"
             }`}
           >
             <h3 className="text-2xl sm:text-4xl night headline text-white" data-aos="fade-up">Hi! There 👋</h3>
-            <p className="text-l sm:text-sm md:text-xl mt-2 font-light text-white">
+            <p className="text-xl  md:text-xl mt-2 font-light text-white">
               I’m <span data-aos="fade-down" className="text-lg font-bold text-info animate-pulse">Clinton Templeton</span>, 
               a full-stack software developer and coding tutor. I develop industry-standard products that solve everyday problems,
               with an emphasis on user experience, accessibility, and performance.
