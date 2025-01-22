@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
+
+
+
 *{
     margin:0px;
     padding:0px;
-    font-family: segoe ui;
+    font-family: Montserrat;
     
 }
 
