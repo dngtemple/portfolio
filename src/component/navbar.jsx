@@ -46,7 +46,8 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="/cv.pdf" download className="tooltip tooltip-bottom" data-tip="Download CV">
-                  <IoIosPrint className="text-xl" />
+                  {/* <IoIosPrint className="text-xl" /> */}
+                  <h4>Download CV</h4>
                 </a>
                 <Tooltip place="bottom" type="dark" effect="solid" />
               </li>

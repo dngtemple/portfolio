@@ -60,7 +60,7 @@ export default function WorkExperience() {
   return (
 
     <>
-    <Education/>
+    {/* <Education/> */}
     <Skills/>
     <div className="container mx-auto my-10 px-4 flex flex-col md:flex-row">
       <div className="w-full md:w-1/4 sticky top-0 mb-8 md:mb-0">
