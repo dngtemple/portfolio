@@ -55,10 +55,11 @@ export default function Testimonials() {
   return (
     <section class="py-6 text-blue-900 sm:py-16 lg:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-screen-lg lg:px-8">
-      <h2 class="text-3xl font-bold text-info text-center">Have a look at what my clients say</h2>
+      <h2 class="text-3xl mb-10 font-bold text-info text-center">Have a look at what my clients say</h2>
       <hr class="mx-auto mt-6 hidden h-1 w-52 bg-white md:block xl:mt-8 xl:h-2" />
     <div class="flex flex-col lg:flex-row">
-      <div class="relative mx-auto mb-10 flex h-96 overflow-hidden rounded-xl bg-info shadow sm:mt-20 lg:h-auto lg:max-w-md lg:pt-20">
+      <div class="relative mx-auto mb-10 flex h-96 overflow-hidden rounded-xl bg-info shadow sm:mt-20  lg:h-auto lg:max-w-md lg:pt-20">
+      <img class="absolute top-0 h-full w-full object-cover opacity-10" src="/consult.png" alt="" />
         <div class="relative mt-auto w-full">
           <div class="flex flex-col p-6 lg:px-7 lg:py-8">
             <div class="">
@@ -70,7 +71,7 @@ export default function Testimonials() {
             <div class="mt-10 flex items-center">
               <div class="ml-4 text-white">
                 <p class="text-base font-bold">Kojo Kwarteng</p>
-                <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p>
+                {/* <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p> */}
               </div>
             </div>
           </div>
@@ -81,15 +82,15 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+              <p class="text-lg leading-relaxed">"His input on our app design and frontend  has added tremendous value to our product roadmap."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
-            <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/y9s3xOJV6rnQPKIrdPYJy.png" alt="" />
+            {/* <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/y9s3xOJV6rnQPKIrdPYJy.png" alt="" /> */}
             <div class="ml-4">
-              <p class="text-base font-bold">James Khawalski</p>
-              <p class="mt-0.5 text-sm">CEO, Mavoline</p>
+              <p class="text-base font-bold">Andikan</p>
+              <p class="mt-0.5 text-sm">Project manager, Crivre Inc.</p>
             </div>
           </div>
         </div>
@@ -97,14 +98,14 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+              <p class="text-lg leading-relaxed">"His professionalism, deep knowledge of modern web technologies, and dedication to delivering pixel-perfect solutions truly impressed our entire team."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
             <div class="ml-4">
-              <p class="text-base font-bold">Jacob Jones</p>
-              <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p>
+              <p class="text-base font-bold">Elvis Agah</p>
+              {/* <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p> */}
             </div>
           </div>
         </div>
@@ -112,15 +113,15 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+              <p class="text-lg leading-relaxed">"Working with Templeton was a game changer for our business. His ability to translate complex technical issues into simple, actionable solutions made our tech consultation sessions highly productive. We saw immediate improvements in performance and client satisfaction."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
-            <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/fR71TFZIDTv2jhvKsOMhC.png" alt="" />
+            {/* <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/fR71TFZIDTv2jhvKsOMhC.png" alt="" /> */}
             <div class="ml-4">
-              <p class="text-base font-bold">Jenny Wilson</p>
-              <p class="text-blue-90 mt-0.5 text-sm">Esports Commentator</p>
+              <p class="text-base font-bold">Jessica Awuah</p>
+              {/* <p class="text-blue-90 mt-0.5 text-sm">Esports Commentator</p> */}
             </div>
           </div>
         </div>
