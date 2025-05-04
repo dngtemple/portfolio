@@ -1,49 +1,121 @@
-import React, { useEffect } from 'react';
-import { IoLogoLinkedin, IoLogoTwitter, IoLogoXbox,  } from 'react-icons/io5';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { MdAlternateEmail } from "react-icons/md";
-import { FaSquareUpwork } from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
 
-export default function Contact() {
+
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+export default function Contact  () {
+  return (
+    <div className="flex items-center justify-center bg-white px-8 py-24 text-neutral-800">
+      <BlockInTextCard
+        tag="Contact me"
+        text={
+          <>
+            <strong>Have questions?</strong> I'd love to help! Book a call with me to discuss your project, I'm here to assist you. Let's work together to bring your ideas to life!{" "}
+            
+          </>
+        }
+        examples={[
+          "Do you offer ongoing support after development?",
+          "Will you handle the UI/UX design or should I hire a designer?",
+          "How long will it take to develop the project?",
+          "What are the hosting or infrastructure requirements?",
+        ]}
+      />
+    </div>
+  );
+};
+
+const BlockInTextCard = ({ tag, text, examples }) => {
+  return (
+    <div className="w-full max-w-xl space-y-6">
+      <div>
+        <p className="mb-1.5 text-2xl font-light uppercase">{tag}</p>
+        <hr className="border-neutral-700" />
+      </div>
+      <p className="max-w-lg text-xl leading-relaxed">{text}</p>
+      <div>
+        <Typewrite examples={examples} />
+        <hr className="border-neutral-300" />
+      </div>
+      <button className="w-full rounded-full border bg-info border-neutral-950 py-2 text-sm font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100">
+        Book now
+      </button>
+    </div>
+  );
+};
+
+const LETTER_DELAY = 0.025;
+const BOX_FADE_DURATION = 0.125;
+
+const FADE_DELAY = 5;
+const MAIN_FADE_DURATION = 0.25;
+
+const SWAP_DELAY_IN_MS = 5500;
+
+const Typewrite = ({ examples }) => {
+  const [exampleIndex, setExampleIndex] = useState(0);
+
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    const intervalId = setInterval(() => {
+      setExampleIndex((pv) => (pv + 1) % examples.length);
+    }, SWAP_DELAY_IN_MS);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className="container mx-auto my-10 px-4">
-      {/* <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Contact Me</h2> */}
-      <p className="text-center text-lg mb-8" data-aos="fade-up">
-        I am available for full-time and freelance work. Contact me through any of the links below:
-      </p>
-      {/* <div class="m-4 md:m-20 bg-primary rounded-2xl text-white p-4 md:p-8 mt-40 px-4 md:px-16 py-8" style="opacity: 1; transform: none;"><h3 class="text-4xl md:text-6xl font-semibold">I want to build software that not only works but wows simple, smart, and built to last.</h3></div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6" data-aos="zoom-in">
-        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-          <a href="mailto:donnahaytempleton1230@gmail.com" className="text-info text-4xl hover:text-blue-500">
-            <MdAlternateEmail />
-          </a>
-          <p className="mt-2 text-center">Email</p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-          <a href="https://www.linkedin.com/in/clinton-templeton-a8700a271" target="_blank" rel="noopener noreferrer" className="text-info text-4xl hover:text-blue-700">
-            <IoLogoLinkedin />
-          </a>
-          <p className="mt-2 text-center">LinkedIn</p>
-        </div>
-        {/* <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-          <a href="https://twitter.com/dngtemple" target="_blank" rel="noopener noreferrer" className="text-info text-4xl hover:text-blue-400">
-            <BsTwitterX />
-          </a>
-          <p className="mt-2 text-center">Twitter</p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
-          <a href="https://www.upwork.com/freelancers/~017247c7adfe51eef2?mp_source=share" target="_blank" rel="noopener noreferrer" className="text-info text-4xl hover:text-green-500">
-            <FaSquareUpwork />
-          </a>
-          <p className="mt-2 text-center">Upwork</p>
-        </div> */}
-      </div>
-    </div>
+    <p className="mb-2.5 text-sm font-light uppercase">
+      <span className="inline-block size-2 bg-neutral-950" />
+      <span className="ml-3">
+        EXAMPLE:{" "}
+        {examples[exampleIndex].split("").map((l, i) => (
+          <motion.span
+            initial={{
+              opacity: 1,
+            }}
+            animate={{
+              opacity: 0,
+            }}
+            transition={{
+              delay: FADE_DELAY,
+              duration: MAIN_FADE_DURATION,
+              ease: "easeInOut",
+            }}
+            key={`${exampleIndex}-${i}`}
+            className="relative"
+          >
+            <motion.span
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              transition={{
+                delay: i * LETTER_DELAY,
+                duration: 0,
+              }}
+            >
+              {l}
+            </motion.span>
+            <motion.span
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: [0, 1, 0],
+              }}
+              transition={{
+                delay: i * LETTER_DELAY,
+                times: [0, 0.1, 1],
+                duration: BOX_FADE_DURATION,
+                ease: "easeInOut",
+              }}
+              className="absolute bottom-[3px] left-[1px] right-0 top-[3px] bg-neutral-950"
+            />
+          </motion.span>
+        ))}
+      </span>
+    </p>
   );
-}
+};
