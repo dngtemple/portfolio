@@ -4,7 +4,9 @@ import { MdWhatsapp, MdEmail, MdBarChart, MdArchitecture, MdAddModerator, MdApar
 import { Link } from "react-scroll";
 import { Tooltip } from 'react-tooltip';
 import 'aos/dist/aos.css';
+import Circle from './circle';
 import WorkExperience from './experience';
+
 import { IoIosCall, IoIosPrint } from "react-icons/io";
 
 const Navbar = () => {
@@ -82,6 +84,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Circle/>
       <WorkExperience/>
     </>
   );
