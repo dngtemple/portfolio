@@ -94,10 +94,10 @@ export default function WorkExperience() {
         ))}
       </div>
     </div>
+    <Circle/>
     <Element name="projects">
         <Project />
       </Element>
-    <Circle/>
     <Testimonials/>
  
 

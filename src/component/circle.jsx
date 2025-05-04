@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 export default function DrawCircleText(){
   return (
     <div className="grid place-content-center bg-white px-4 py-24 text-yellow-50">
-      <h1 className="max-w-2xl text-center text-info text-5xl leading-snug">
-        Scale your{" "}
+      <h1 className="max-w-2xl text-center text-info text-4xl leading-snug">
+      Building{" "}
         <span className="relative">
-          busineess
+          dreams
           <svg
             viewBox="0 0 286 73"
             fill="none"
@@ -26,12 +26,10 @@ export default function DrawCircleText(){
             />
           </svg>
         </span>{" "}
-        with a simple website
+        with code—and having fun along the way.
       </h1>
       <p className="mt-8 max-w-2xl text-center text-lg text-neutral-600">
-        Elevate your brand presence and engage customers effectively by building a fast,
-        responsive, and user-friendly website tailored to your business goals. A professionally designed
-        web presence not only strengthens credibility but also drives growth through seamless digital experiences.
+      I love turning ideas into meaningful, user-friendly experiences by combining creativity with technical skill. Building dreams with code—and having fun along the way—is the mindset that keeps every project both exciting and impactful.
       </p>
     </div>
   );

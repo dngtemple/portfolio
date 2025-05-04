@@ -23,8 +23,8 @@ const skills = [
 export default function Skills() {
   
   return (
-    <div className="container mx-auto my-10 px-4">
-      <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">My Skills & Tech Stack</h2>
+    <div className="container mx-auto my-10 ">
+      <h2 className="text-center text-2xl font-bold  mb-6 text-info" data-aos="fade-down">My Skills & Tech Stack</h2>
       <p className="text-center text-lg mb-8" data-aos="fade-up">
         I have experience working with a variety of technologies and tools. Here are some of the key skills and technologies I use:
       </p>

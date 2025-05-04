@@ -53,20 +53,82 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="container mx-auto my-10 px-4">
-      <h2 className="text-center text-3xl font-bold mb-6 text-info" data-aos="fade-down">Testimonials</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
-            <p className="text-gray-700 mb-4">"{testimonial.feedback}"</p>
-            <div className="flex items-center mb-2">
-              {renderStars(testimonial.rating)}
+    <section class="py-6 text-blue-900 sm:py-16 lg:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-screen-lg lg:px-8">
+      <h2 class="text-3xl font-bold text-info text-center">Have a look at what my clients say</h2>
+      <hr class="mx-auto mt-6 hidden h-1 w-52 bg-white md:block xl:mt-8 xl:h-2" />
+    <div class="flex flex-col lg:flex-row">
+      <div class="relative mx-auto mb-10 flex h-96 overflow-hidden rounded-xl bg-info shadow sm:mt-20 lg:h-auto lg:max-w-md lg:pt-20">
+        <div class="relative mt-auto w-full">
+          <div class="flex flex-col p-6 lg:px-7 lg:py-8">
+            <div class="">
+              <blockquote class="">
+                <p class="text-3xl font-bold text-white sm:text-5xl">"I cannot overstate how much this has helped my business"</p>
+              </blockquote>
             </div>
-            <h3 className="text-xl font-semibold text-info">{testimonial.name}</h3>
-            <p className="text-gray-600 text-sm">{testimonial.role}</p>
+
+            <div class="mt-10 flex items-center">
+              <div class="ml-4 text-white">
+                <p class="text-base font-bold">Kojo Kwarteng</p>
+                <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p>
+              </div>
+            </div>
           </div>
-        ))}
+        </div>
+      </div>
+
+      <div class="relative mx-auto grid max-w-lg grid-cols-1 gap-y-14 lg:pl-20">
+        <div class="flex flex-col bg-white">
+          <div class="">
+            <blockquote class="">
+              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+            </blockquote>
+          </div>
+
+          <div class="mt-4 flex items-center">
+            <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/y9s3xOJV6rnQPKIrdPYJy.png" alt="" />
+            <div class="ml-4">
+              <p class="text-base font-bold">James Khawalski</p>
+              <p class="mt-0.5 text-sm">CEO, Mavoline</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white">
+          <div class="">
+            <blockquote class="">
+              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+            </blockquote>
+          </div>
+
+          <div class="mt-4 flex items-center">
+            <div class="ml-4">
+              <p class="text-base font-bold">Jacob Jones</p>
+              <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white">
+          <div class="">
+            <blockquote class="">
+              <p class="text-lg leading-relaxed">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores facere repellendus, velit quis fugiat."</p>
+            </blockquote>
+          </div>
+
+          <div class="mt-4 flex items-center">
+            <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/fR71TFZIDTv2jhvKsOMhC.png" alt="" />
+            <div class="ml-4">
+              <p class="text-base font-bold">Jenny Wilson</p>
+              <p class="text-blue-90 mt-0.5 text-sm">Esports Commentator</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+
   );
 }
