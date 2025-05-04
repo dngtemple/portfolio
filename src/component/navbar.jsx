@@ -62,9 +62,9 @@ const Navbar = () => {
 
         <div className="relative h-[70vh] gap-4 flex flex-col-reverse items-center justify-center text-center text-sm p-4 text-white sm:flex-col-reverse sm:text-l md:text-xl sm:items-center sm:gap-8 md:gap-20 w-[90%] ml-[5%] mt-[5%] sm:p-14 md:p-8 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">
           <div className="h-full  sm:w-10 w-full flex flex-row sm:flex-row gap-1.5 text-2xl items-center justify-center">
-            <a href="wwww.github.com/dngtemple"><IoLogoGithub className="text-l text-info " /></a> 
+            <a href="https://github.com/dngtemple" target="blank"><IoLogoGithub className="text-l text-info " /></a> 
             {/* <a href="mailto:donnahaytempleton1230@gmail.com"> <MdEmail className="text-l text-info " /></a> */}
-            <a href="https://www.linkedin.com/in/clinton-templeton-a8700a271"> <IoLogoLinkedin className="text- text-info" /></a>
+            <a href="https://www.linkedin.com/in/clinton-templeton-a8700a271" target="blank"> <IoLogoLinkedin className="text- text-info" /></a>
           </div>
 
           <div
