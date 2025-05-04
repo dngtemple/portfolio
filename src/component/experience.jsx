@@ -8,6 +8,8 @@ import Project from './project';
 import Testimonials from './testimonials';
 import Education from './education';
 import { Element } from 'react-scroll';
+import Circle from './circle';
+
 
 
 import Footer from './footer';
@@ -95,7 +97,10 @@ export default function WorkExperience() {
     <Element name="projects">
         <Project />
       </Element>
+    <Circle/>
     <Testimonials/>
+ 
+
 
     <Element name="contact">
         <Contact />

@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import { MdWhatsapp, MdEmail, MdBarChart, MdArchitecture, MdAddModerator, MdApartment } from "react-icons/md";
+import { MdWhatsapp, MdApartment } from "react-icons/md";
+import { IoIosChatboxes, IoIosChatbubbles } from "react-icons/io";
 import { Link } from "react-scroll";
 import { Tooltip } from 'react-tooltip';
 import 'aos/dist/aos.css';
 import Circle from './circle';
 import WorkExperience from './experience';
+import { VscProject } from "react-icons/vsc";
+import { FiFolder } from "react-icons/fi";
 
 import { IoIosCall, IoIosPrint } from "react-icons/io";
 
@@ -38,12 +41,12 @@ const Navbar = () => {
             <ul className="menu menu-xs menu-horizontal menu-dropdown-toggle bg-info rounded-box">
               <li>
                 <Link to="projects" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Projects">
-                  <MdApartment className="text-xl" />
+                  <FiFolder fill="" className="text-xl" />
                 </Link>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Contact">
-                  <IoIosCall className="text-xl" />
+                <Link to="contact" smooth={true} duration={1000} className="tooltip tooltip-bottom" data-tip="Contact Me">
+                  <IoIosChatbubbles className="text-xl" />
                 </Link>
               </li>
               <li>
@@ -84,7 +87,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Circle/>
+      {/* <Circle/> */}
       <WorkExperience/>
     </>
   );
