@@ -29,7 +29,7 @@ const BlockInTextCard = ({ tag, text, examples }) => {
   return (
     <div className="w-full max-w-xl space-y-6">
       <div>
-        <p className="mb-1.5 text-2xl font-light uppercase">{tag}</p>
+        <p className="mb-1.5 text-3xl text-center text-info  font-bold uppercase">{tag}</p>
         <hr className="border-neutral-700" />
       </div>
       <p className="max-w-lg text-xl leading-relaxed">{text}</p>

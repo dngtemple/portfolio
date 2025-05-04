@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { FaCss3, FaFigma, FaNodeJs, FaHtml5, FaReact } from "react-icons/fa";
+import {  FaNodeJs, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoDocker, IoLogoGithub, IoLogoJavascript, IoLogoPython, IoLogoFigma, IoLogoCss3 } from "react-icons/io5";
-import { SiAdobeillustrator, SiMysql, SiExpress } from "react-icons/si";
-import { BiLogoMongodb, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi";
+import {  SiMysql, SiExpress } from "react-icons/si";
+import { BiLogoMongodb} from "react-icons/bi";
 
 const skills = [
   { name: "React", icon: <FaReact/> },
@@ -28,7 +28,7 @@ export default function Skills() {
       <p className="text-center text-lg mb-8" data-aos="fade-up">
         I have experience working with a variety of technologies and tools. Here are some of the key skills and technologies I use:
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <div key={index} className="rounded-lg shadow-md p-4 flex flex-col items-center" data-aos="zoom-in">
             <div className="text-4xl mb-2 text-info">{skill.icon}</div>

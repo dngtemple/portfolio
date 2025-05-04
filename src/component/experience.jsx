@@ -64,7 +64,7 @@ export default function WorkExperience() {
     <>
     {/* <Education/> */}
     <Skills/>
-    <div className="container mx-auto my-10 px-4 flex flex-col md:flex-row">
+    <div className="container mx-auto my-10 mt-20 px-4 flex flex-col md:flex-row">
       <div className="w-full md:w-1/4 sticky top-0 mb-8 md:mb-0">
         <h2 className="text-2xl font-bold mb-4 text-info" data-aos="fade-right">Work Experience</h2>
         <ul className="list-none pl-5">
