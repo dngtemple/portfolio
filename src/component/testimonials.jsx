@@ -82,14 +82,14 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"His input on our app design and frontend  has added tremendous value to our product roadmap."</p>
+              <p class="text-lg leading-relaxed text-black">"His input on our app design and frontend  has added tremendous value to our product roadmap."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
             {/* <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/y9s3xOJV6rnQPKIrdPYJy.png" alt="" /> */}
             <div class="ml-4">
-              <p class="text-base font-bold">Andikan</p>
+              <p class="text-base font-bold ">Andikan</p>
               <p class="mt-0.5 text-sm">Project manager, Crivre Inc.</p>
             </div>
           </div>
@@ -98,13 +98,13 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"His professionalism, deep knowledge of modern web technologies, and dedication to delivering pixel-perfect solutions truly impressed our entire team."</p>
+              <p class="text-lg leading-relaxed text-black">"His professionalism, deep knowledge of modern web technologies, and dedication to delivering pixel-perfect solutions truly impressed our entire team."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
             <div class="ml-4">
-              <p class="text-base font-bold">Elvis Agah</p>
+              <p class="text-base font-bold ">Elvis Agah</p>
               {/* <p class="text-blue-90 mt-0.5 text-sm">Youtube Personality</p> */}
             </div>
           </div>
@@ -113,14 +113,14 @@ export default function Testimonials() {
         <div class="flex flex-col bg-white">
           <div class="">
             <blockquote class="">
-              <p class="text-lg leading-relaxed">"Working with Templeton was a game changer for our business. His ability to translate complex technical issues into simple, actionable solutions made our tech consultation sessions highly productive. We saw immediate improvements in performance and client satisfaction."</p>
+              <p class="text-lg leading-relaxed text-black">"Working with Templeton was a game changer for our business. His ability to translate complex technical issues into simple, actionable solutions made our tech consultation sessions highly productive. We saw immediate improvements in performance and client satisfaction."</p>
             </blockquote>
           </div>
 
           <div class="mt-4 flex items-center">
             {/* <img class="h-11 w-11 flex-shrink-0 rounded-full object-cover" src="/images/fR71TFZIDTv2jhvKsOMhC.png" alt="" /> */}
             <div class="ml-4">
-              <p class="text-base font-bold">Jessica Awuah</p>
+              <p class="text-base font-bold ">Jessica Awuah</p>
               {/* <p class="text-blue-90 mt-0.5 text-sm">Esports Commentator</p> */}
             </div>
           </div>

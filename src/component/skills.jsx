@@ -25,8 +25,9 @@ export default function Skills() {
   return (
     <div className="container mx-auto my-10 ">
       <h2 className="text-center text-2xl font-bold  mb-6 text-info" data-aos="fade-down">My Skills & Tech Stack</h2>
-      <p className="text-center text-lg mb-8" data-aos="fade-up">
-        I have experience working with a variety of technologies and tools. Here are some of the key skills and technologies I use:
+      <p className="text-center text-lg mb-8 my-10 p-5" data-aos="fade-up">
+        I have experience working with a variety of technologies and tools.
+         Here are some of the key skills and technologies I use:
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (

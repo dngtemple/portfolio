@@ -37,9 +37,12 @@ const BlockInTextCard = ({ tag, text, examples }) => {
         <Typewrite examples={examples} />
         <hr className="border-neutral-300" />
       </div>
+
+      <a href="https://calendly.com/donnahaytempleton1230/30min" target="blank" rel="noopener noreferrer">
       <button className="w-full rounded-full border bg-info border-neutral-950 py-2 text-sm font-medium transition-colors hover:bg-neutral-950 hover:text-neutral-100">
         Book now
       </button>
+      </a>
     </div>
   );
 };
