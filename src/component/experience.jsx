@@ -10,6 +10,11 @@ import Circle from './circle';
 import Footer from './footer';
 import Contact from './contact';
 import { FaBriefcase, FaCheckCircle } from 'react-icons/fa';
+import Particles from '@tsparticles/react';
+
+import { loadSlim } from '@tsparticles/slim';
+
+
 
 const experiences = [
   {
@@ -29,7 +34,7 @@ const experiences = [
   {
     id: 2,
     company: "IT Consortium",
-    jobTitle: "Software Developer Intern",
+    jobTitle: "Frontend Developer Intern",
     startDate: "August 2024",
     endDate: "September 2024",
     responsibilities: [
@@ -61,6 +66,11 @@ export default function WorkExperience() {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const particlesInit = async (engine) => {
+    await loadSlim(engine); // instead of loadFull
+  };
+  
+
   return (
     <>
       <Skills />
@@ -78,15 +88,37 @@ export default function WorkExperience() {
               className="relative group"
               data-aos="fade-up"
             >
-              <div className="absolute -left-6 top-1">
-                <div className="w-6 h-6 bg-info text-white rounded-full flex items-center justify-center shadow-lg">
-                  <FaBriefcase className="text-sm" />
-                </div>
-              </div>
+              {/* 🎉 Animated Particle Background */}
+              <Particles
+                id={`particles-${experience.id}`}
+                init={particlesInit}
+                options={{
+                  fullScreen: { enable: false },
+                  background: { color: "transparent" },
+                  fpsLimit: 60,
+                  style: { position: 'absolute', inset: 0, borderRadius: '0.75rem',zIndex: 10 },
+                  particles: {
+                    number: { value: 25 },
+                    size: { value: { min: 1, max: 3 } },
+                    opacity: { value: 0.2 },
+                    color: { value: "#4ade80" },
+                    move: { enable: true, speed: 0.5 },
+                  },
+                  interactivity: { events: { onHover: { enable: false } } },
+                }}
+                className="absolute inset-0 z-0 rounded-xl pointer-events-none"
+              />
 
-              <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-md border border-white/20">
+              {/* 📝 Experience Card Content */}
+              <div className="relative z-10 bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-md border border-white/20">
+                <div className="absolute -left-6 top-1">
+                  <div className="w-6 h-6 bg-info text-white rounded-full flex items-center justify-center shadow-lg">
+                    <FaBriefcase className="text-sm" />
+                  </div>
+                </div>
+
                 <h3 className="text-xl font-bold text-info mb-1">{experience.company}</h3>
-                <h4 className="text-lg font-medium text-white mb-1">{experience.jobTitle}</h4>
+                <h4 className="text-lg font-medium text-black mb-1">{experience.jobTitle}</h4>
                 <p className="text-gray-300 text-sm mb-3">
                   {experience.startDate} - {experience.endDate}
                 </p>
@@ -107,12 +139,11 @@ export default function WorkExperience() {
                   ))}
                 </ul>
 
-                {/* Skill Tags */}
                 <div className="mt-5 flex flex-wrap gap-2" data-aos="fade-up" data-aos-delay="200">
                   {experience.skills.map((skill, idx) => (
                     <span
                       key={idx}
-                      className="bg-info text-white border border-white/20 px-3 py-1 text-sm rounded-full shadow-sm hover:bg-white/20 transition duration-300"
+                      className="btn btn-sm text-black border px-3 py-1 text-sm hover:bg-white/20 hover:text-black transition duration-300"
                     >
                       {skill}
                     </span>
