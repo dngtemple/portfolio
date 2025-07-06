@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function DrawCircleText(){
   return (
     <div className="grid place-content-center bg-white px-4 py-24 text-yellow-50">
-      <h1 className="max-w-2xl text-center text-info text-4xl leading-snug">
+      <h2 className="max-w-2xl font-bold text-center text-info text-3xl leading-snug">
       Building{" "}
         <span className="relative">
           dreams
@@ -27,7 +27,7 @@ export default function DrawCircleText(){
           </svg>
         </span>{" "}
         with code—and having fun along the way.
-      </h1>
+      </h2>
       <p className="mt-8 max-w-2xl text-center text-lg text-neutral-600">
       I love turning ideas into meaningful, user-friendly experiences by combining creativity with technical skill. Building dreams with code—and having fun along the way—is the mindset that keeps every project both exciting and impactful.
       </p>
